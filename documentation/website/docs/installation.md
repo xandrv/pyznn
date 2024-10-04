@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ### Requirements
 
-- Python 3.7 or above
+- Python 3.12 or above
 
 ```bash
 pip install pyznn
