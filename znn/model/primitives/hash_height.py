@@ -8,7 +8,8 @@ class HashHeight:
         self.hash = hash_instance
 
     def __str__(self):
-        return self.core.hex()
+        return str(self.hash.to_bytes(8, "big"))
+        # return self.core.hex()
 
     @staticmethod
     def from_json(json_data):

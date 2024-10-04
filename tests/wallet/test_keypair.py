@@ -1,5 +1,5 @@
-import ed25519
 import pytest
+from nacl.exceptions import BadSignatureError
 
 from znn.wallet.keypair import KeyPair
 from znn.wallet.keypair import verify_signature
@@ -16,6 +16,6 @@ class TestKeyPair:
     def test_sign_and_verify_raises_exception(self):
         keypair = KeyPair(self.private_key_hex)
         signed_msg = keypair.sign("Hello, aliens")
-        with pytest.raises(ed25519.BadSignatureError) as excinfo:
+        with pytest.raises(BadSignatureError) as excinfo:
             verify_signature(keypair.public_key, signed_msg.decode(), "Hello, humans")
-        assert "Bad Signature" in str(excinfo.value)
+        assert "Signature was forged or corrupt" in str(excinfo.value)

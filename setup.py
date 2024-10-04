@@ -14,18 +14,18 @@ from setuptools import setup
 # Package meta-data.
 NAME = "pyznn"
 DESCRIPTION = "Python SDK for interacting with the Zenon network and ecosystem."
-URL = "https://github.com/millerships/pyznn"
+URL = "https://github.com/xandrv/pyznn"
 EMAIL = "roymiller2105@gmail.com"
 AUTHOR = "Roy Miller"
-REQUIRES_PYTHON = ">=3.7.0"
-VERSION = "0.0.1"
+REQUIRES_PYTHON = ">=3.12.0"
+VERSION = "0.0.2"
 
 INSTALL_REQUIRES = [
     "bech32==1.2.0",
     "bip-utils==2.3.0",
-    "ed25519==1.5",
-    "eth-abi==2.1.1",
-    "eth-utils==1.10.0",
+    "pynacl==1.5.0",
+    "eth-abi==5.1.0",
+    "eth-utils==5.0.0",
     "jsonrpcclient==4.0.2",
     "mnemonic==0.20",
     "websockets==10.3",
@@ -41,7 +41,6 @@ EXTRAS_REQUIRES = {
         "pytest-mock==3.7.0",
     ],
 }
-
 
 here = os.path.abspath(os.path.dirname(__file__))
 
@@ -120,8 +119,7 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.7",
-        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.12",
         "Programming Language :: Python :: Implementation :: CPython",
         "Programming Language :: Python :: Implementation :: PyPy",
     ],

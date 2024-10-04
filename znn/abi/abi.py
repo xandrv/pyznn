@@ -1,8 +1,8 @@
 import json
 from typing import List
 
-from eth_abi import decode_abi
-from eth_abi import encode_abi
+from eth_abi import decode
+from eth_abi import encode
 
 from znn.abi.utils import get_function_signature
 from znn.model.primitives.address import Address
@@ -17,7 +17,10 @@ class ABI:
         for entry in data:
             if entry["type"] == "function":
                 self.entries.append(
-                    {"name": entry["name"], "inputs": entry["inputs"],}
+                    {
+                        "name": entry["name"],
+                        "inputs": entry["inputs"],
+                    }
                 )
                 self.fn_name_map[entry["name"]] = entry["inputs"]
 
@@ -50,7 +53,7 @@ class ABI:
         fn_hash_prefix = fn_hash.core.hex()[:8]
 
         # Encoding func params
-        encoded_params = encode_abi([i["type"] for i in fn_inputs], fn_params).hex()
+        encoded_params = encode([i["type"] for i in fn_inputs], fn_params).hex()
 
         return bytes.fromhex(f"{fn_hash_prefix}{encoded_params}")
 
@@ -60,7 +63,7 @@ class ABI:
 
         fn_inputs = self.fn_name_map[fn_name]
         encoded_params = data[4:]
-        decoded_tuple = decode_abi([i["type"] for i in fn_inputs], encoded_params)
+        decoded_tuple = decode([i["type"] for i in fn_inputs], encoded_params)
 
         response = {}
         for i in range(len(fn_inputs)):

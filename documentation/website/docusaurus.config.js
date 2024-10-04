@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "PyZNN Docs",
   tagline: "Python SDK for interacting with the Zenon network and ecosystem.",
-  url: "https://millerships.github.io",
+  url: "https://xandrv.github.io",
   baseUrl: "/pyznn/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -16,7 +16,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "millerships", // Usually your GitHub org/user name.
+  organizationName: "xandrv", // Usually your GitHub org/user name.
   projectName: "pyznn", // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -63,7 +63,7 @@ const config = {
             label: "Documentation",
           },
           {
-            href: "https://github.com/millerships/pyznn",
+            href: "https://github.com/xandrv/pyznn",
             label: "GitHub",
             position: "right",
           },

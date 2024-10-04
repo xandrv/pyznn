@@ -30,4 +30,4 @@ class WsClient:
 
 def get_default_client():
     """Get ws client for quick testing/playing."""
-    return WsClient("ws://nodes.zenon.place:35998")
+    return WsClient("wss://my.hc1node.com:35998")

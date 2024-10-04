@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://millerships.github.io/pyznn/"><img src="https://millerships.github.io/pyznn/img/logo.svg" alt="PyZNN"></a>
+  <a href="https://xandrv.github.io/pyznn/"><img src="https://xandrv.github.io/pyznn/img/logo.svg" alt="PyZNN"></a>
 </p>
 <p align="center">
     <em>Python SDK for interacting with the Zenon network and ecosystem.</em>
@@ -7,9 +7,9 @@
 
 ---
 
-**Documentation**: <a href="https://millerships.github.io/pyznn/" target="_blank">https://millerships.github.io/pyznn</a>
+**Documentation**: <a href="https://xandrv.github.io/pyznn/" target="_blank">https://xandrv.github.io/pyznn</a>
 
-**Source Code**: <a href="https://github.com/millerships/pyznn/" target="_blank">https://github.com/millerships/pyznn</a>
+**Source Code**: <a href="https://github.com/xandrv/pyznn/" target="_blank">https://github.com/xandrv/pyznn</a>
 
 ---
 
@@ -17,7 +17,7 @@
 
 ### Requirements
 
-- Python 3.7 or above
+- Python 3.12 or above
 
 ```bash
 pip install pyznn
@@ -25,8 +25,10 @@ pip install pyznn
 
 ## Contributing
 
-Head over to <a href="https://millerships.github.io/pyznn/docs/contributing" target="_blank">Contributing docs</a>.
+Head over to <a href="https://xandrv.github.io/pyznn/docs/contributing" target="_blank">Contributing docs</a>.
 
 ## Sponsors
 
-This project was sponsored by <a href="https://medium.com/@zenon.network/hyperspace-x-accelerator-z-towards-a-dao-of-daos-38dfad496365" target="_blank">Accelerator-Z</a>
+This project was sponsored
+by <a href="https://medium.com/@zenon.network/hyperspace-x-accelerator-z-towards-a-dao-of-daos-38dfad496365" target="_blank">
+Accelerator-Z</a>
